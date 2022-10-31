@@ -32,6 +32,7 @@ public class Arraysort {
 		Hosteller h1 = new Hosteller();
 	
 	Scanner sc = new Scanner(System.in);
+		
 	
 	System.out.println("Enter the details: ");
 	
@@ -78,6 +79,19 @@ public class Arraysort {
 	h1.setHostelName(f1);
 	
 	h1.setRoomNumber(g1);
+		
+	int a1 = sc.nextInt();
+	
+	System.out.println("Student Name");
+	
+	sc.nextLine();
+	
+	String b1=sc.nextLine();
+	
+	System.out.println("Department Id"); 
+	int c1 = sc.nextInt();
+	
+	System.out.println("Gender");
 	
 		
 		Arrays.sort(s,new Mycomparator());
