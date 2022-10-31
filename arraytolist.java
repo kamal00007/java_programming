@@ -25,6 +25,18 @@ public class ArraytoList {
 			System.out.println(string);
 		}
 		
+		void testRemoveCartItem() throws CartEmptyException
+	{
+		CartDao cartDao = new CartDaoCollectionImpl();
+		cartDao.removeCartItem(1,1);
+		cartDao.getAllCartItems(1);
+		ArrayList<MenuItem> menuItemList=cartDao.getAllCartItems(1);
+		for(MenuItem x:menuItemList)
+		{
+			System.out.println(x);
+		}
+	}
+		
 	}
 
 }
