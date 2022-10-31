@@ -13,6 +13,37 @@ public class ArraytoList {
 			System.out.println(string);
 		}
 		
+		System.out.println("enter a number:");
+
+		int n =s.nextInt();
+		boolean primeFlag=true;
+		if(n<=1) {
+			System.out.println("is not prime");
+		}
+		for(i=2;i<=n-1;i++)
+
+		{
+
+		if(n%i==0)
+
+		{
+
+		primeFlag=false;}
+		}
+
+		if(primeFlag == true)
+		{
+
+		System.out.println(n+" is prime");
+
+		}
+		else{
+
+		System.out.println(n+"is not prime");
+
+
+	}
+		
 		List<String> list = Arrays.asList(s);
 		//s[1]="E";
 		System.out.println("after converting into list  "+list);
